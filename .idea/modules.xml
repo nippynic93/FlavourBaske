@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FlavourBasket.iml" filepath="$PROJECT_DIR$/FlavourBasket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FlavourBasket.iml" filepath="$PROJECT_DIR$/.idea/FlavourBasket.iml" />
+      <module fileurl="file://E:\FlavourBasket\FlavourBasket.iml" filepath="E:\FlavourBasket\FlavourBasket.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\FlavourBasket\app\app.iml" filepath="E:\FlavourBasket\app\app.iml" />
     </modules>
   </component>
 </project>

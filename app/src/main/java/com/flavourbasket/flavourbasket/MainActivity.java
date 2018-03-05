@@ -45,16 +45,10 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.youtube_videos:
 
-                        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=FXS2UsZWhok"));
+                        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/flavourbasket"));
                         startActivity(i);
                         mdrawerlayout.closeDrawers();
                         break;
-
-                    case R.id.check:
-                        Intent inte=new Intent(MainActivity.this,Extras.class);
-                        startActivity(inte);
-                        break;
-
                 }
                 return true;
             }
