@@ -33,8 +33,6 @@ public class Extra_fragment extends Fragment {
         contactclick();
         termclick();
 
-
-
         return view;
     }
     public void aboutclick()
@@ -59,7 +57,6 @@ public class Extra_fragment extends Fragment {
                 ft.replace(R.id.extras,new Contactus_Fragment());
                 ft.addToBackStack(null);
                 ft.commit();
-
             }
         });
     }

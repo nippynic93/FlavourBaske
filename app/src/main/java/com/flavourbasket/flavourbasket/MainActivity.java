@@ -10,12 +10,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
      private DrawerLayout mdrawerlayout;
      private  ActionBarDrawerToggle mtoggle;
      NavigationView navigationview;
      BottomNavigationView mBottomNav;
+     private VideoView videoView;
 
 
     @Override
@@ -25,9 +29,13 @@ public class MainActivity extends AppCompatActivity {
         onInitialize();
         navigationdrawer();
         sideview();
+
+        videoView = findViewById(R.id.videoView);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.video);
+        videoView.start();
     }
-    public void onInitialize()
-    {
+
+    public void onInitialize() {
         mdrawerlayout = (DrawerLayout) findViewById(R.id.drawer);
         navigationview = (NavigationView) findViewById(R.id.navigation);
         mBottomNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
@@ -54,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void sideview() {
 
 
@@ -74,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
